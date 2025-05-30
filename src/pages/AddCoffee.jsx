@@ -21,7 +21,7 @@ const AddCoffee = () => {
    .then(data => {                      
         if(data.insertedId){
           Swal.fire({
-            title: "Data Added Successfully!",
+            title: "Coffee Added Successfully!",
             icon: "success",
             draggable: true
           });
@@ -73,9 +73,9 @@ const AddCoffee = () => {
 
           <div>
             <label className="label">
-              <span className="label-text">Category</span>
+              <span className="label-text">Price</span>
             </label>
-            <input type="text" name="category" placeholder="Enter coffee category" className="input input-bordered w-full" />
+            <input type="number" name="price" placeholder="Price per cup" className="input input-bordered w-full" />
           </div>
 
           <div>

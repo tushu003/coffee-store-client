@@ -1,10 +1,12 @@
 import React from 'react'
-import AddCoffee from '../pages/AddCoffee'
+import CoffeeCards from './CoffeeCards';
 
 export default function Home() {
+
+  
   return (
     <div>
-        {/* <AddCoffee></AddCoffee> */}
+      <CoffeeCards></CoffeeCards>
     </div>
   )
 }
