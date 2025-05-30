@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AddCoffee from '../pages/AddCoffee'
 import { useLoaderData } from 'react-router'
 import CoffeeCard from './CoffeeCard';
 
 export default function CoffeeCards() {
-  const coffees = useLoaderData();
+  const initialCoffees = useLoaderData();
+  const [coffees, setCoffees]= useState(initialCoffees)
   console.log(coffees);
   
   return (
@@ -13,7 +14,8 @@ export default function CoffeeCards() {
         <h1 className='text-center rancho-font text-[#331A15] text-3xl font-bold mb-5'>Our Popular Products</h1>
        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-11 md:mx-40 p-6'>
         {
-          coffees.map(coffee => <CoffeeCard  key={coffee._id} coffee={coffee}></CoffeeCard>)
+          coffees.map(coffee => <CoffeeCard  key={coffee._id}
+            coffees={coffees} setCoffees={setCoffees} coffee={coffee}></CoffeeCard>)
         }
        </div>
     </div>
