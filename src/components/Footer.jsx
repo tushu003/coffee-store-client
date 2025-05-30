@@ -4,9 +4,9 @@ import logo from '../../assets/logo1 1 (1).png'
 const Footer = () => {
   return (
     <footer
-      className="bg-[url('/background-pattern.png')] bg-cover bg-center text-base-content pt-10"
+      className=" bg-cover bg-[#f6f6f9] bg-center text-base-content pt-10"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+      <div className="max-w-7xl  mx-auto grid md:grid-cols-2 gap-10">
         {/* Left Side */}
         <div>
           <img src={logo} alt="Logo" className="h-12 mb-1" />

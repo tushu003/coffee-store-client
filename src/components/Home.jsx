@@ -4,7 +4,7 @@ import AddCoffee from '../pages/AddCoffee'
 export default function Home() {
   return (
     <div>
-        <AddCoffee></AddCoffee>
+        {/* <AddCoffee></AddCoffee> */}
     </div>
   )
 }
